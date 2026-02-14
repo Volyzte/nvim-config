@@ -37,7 +37,7 @@ return {
 
           -- Enable treesitter-based indentation
           indent = {
-            enable = true,
+            enable = false,
           },
 
           -- Enable treesitter-based folding (optional)
