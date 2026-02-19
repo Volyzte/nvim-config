@@ -57,10 +57,13 @@ vim.api.nvim_create_autocmd("CursorHold", {
 
 -- Make Nvim transparent again maybe
 vim.cmd [[
+  colorscheme darkblue
   highlight Normal guibg=none
   highlight NonText guibg=none
   highlight CursorLine cterm=NONE ctermbg=DarkGray guibg=#3c3c3c
 ]]
+
+vim.api.nvim_set_hl(0, "MatchParen", { fg = "#F3F3F3", bg = "#6B5300", bold = true })
 
 -- Leader Key Binds
 vim.keymap.set("n", "<leader>q", ":quit!<CR>", { desc = "Quit Neovim" })
