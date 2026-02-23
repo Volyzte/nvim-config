@@ -73,7 +73,8 @@ vim.keymap.set("n", "<leader>p", "]p<CR>", { desc = "Paste text line below curso
 vim.keymap.set("n", "<leader>lf", ":Telescope find_files<CR><Esc>", { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>lg", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>s", ":wq<CR>", { desc = "Save and Quit" })
-vim.keymap.set("n", "<leader>/", ":noh<CR>", { desc = "Clear higlights" })
-vim.keymap.set("v", "<leader>>", ">gv", { desc = "Indent selection" })
+vim.keymap.set("n", "<leader>/", ":noh<cr>", { desc = "clear higlights" })
+vim.keymap.set("v", "<leader>>", ">gv", { desc = "indent selection" })
 vim.keymap.set("v", "<leader><", "<gv", { desc = "Unindent selection" })
+vim.keymap.set({"n", "v"}, "<leader>c", "gc", { desc = "Comment", remap = true})
 
